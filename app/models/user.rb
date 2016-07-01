@@ -38,5 +38,5 @@ end
 end
 
 50.times do
-  User.new(Faker::Name.first_name, Faker::Name.last_name, Faker::Number.between(1, 10))
+  User.new(Faker::Name.first_name.ljust(10), Faker::Name.last_name.ljust(10), Faker::Number.between(1, 10))
 end
