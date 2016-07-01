@@ -1,10 +1,12 @@
 require 'socket'
 require 'json'
 require 'pry'
+require 'faker'
 require_relative '../config/router'
 require_relative '../lib/all'
 
 system('clear')
+
 
 # Initialize a TCPServer object that will listen
 # on localhost:3001 for incoming connections.
