@@ -15,13 +15,19 @@ class User
     $__id += 1
   end
 
-
+def to_json(json = nil)
+  {
+    first_name: @first_name,
+    last_name: @last_name,
+    age: @age
+  }.to_json
+end
   # def to_s
   #   "#{first_name}, #{last_name}, #{age}"
   # end
 
 
-  def all
+  def self.all
     @@all
     # users = [{ first_name: "Ahkeem", last_name: "Lang", id: "1", age: "23"},
     #       {first_name: "Matt", last_name: "Saz", id: "2", age: "22"},
