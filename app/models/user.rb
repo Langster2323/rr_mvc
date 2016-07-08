@@ -19,7 +19,8 @@ def to_json(json = nil)
   {
     first_name: @first_name,
     last_name: @last_name,
-    age: @age
+    age: @age,
+    # id: id.to_i
   }.to_json
 end
   # def to_s
